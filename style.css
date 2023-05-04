@@ -58,6 +58,16 @@ h2 {
     margin-inline-end: 0px;
 }
 
+a {
+    color: #27484A;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+
+a:-webkit-any() {
+    cursor: pointer;
+}
+
 p {
     display: block;
     margin-block-start: 1em;
