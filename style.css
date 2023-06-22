@@ -18,7 +18,7 @@ body {
 }
 
 section#masthead {
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -115,4 +115,61 @@ div.blogparent {
     font-size: 1.2em;
     margin: 0;
     display: block;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cell {
+    flex: 1;
+    position: relative;
+    height: 250px;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.book-cover {
+    border-radius: 4px;
+    padding: 0px;
+    height: 250px;
+    width: 150px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #27484A;
+    overflow: hidden;
+    height: 250px;
+    width: 150px;
+    border-radius: 4px;
+    height: 0;
+    transition: .5s ease;
+}
+
+.cell:hover .overlay {
+    height: 100%;
+}
+
+.text a {
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
