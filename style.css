@@ -173,3 +173,20 @@ div.blogparent {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+#comments {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: space-between;
+    gap: 10px;
+    width: 50%;
+}
+
+iframe:focus {
+    outline: none;
+}
+
+iframe[seamless] {
+    display: block;
+}
